@@ -1,0 +1,28 @@
+body {
+    background: linear-gradient(135deg, #222222 0%,  Red 100%);
+    background-repeat: no-repeat;
+}
+.mynav {
+    position: sticky;
+    top:0;
+    z-index: index 9999;;
+}
+
+#mynav {
+    position: sticky;
+    top:0;
+    z-index: index 9999;;
+}
+.navbar-header {
+    position: sticky;
+    top:0;
+    z-index: index 9999;;
+}
+
+#butn {
+    background-color: #222222;
+    color: whitesmoke;
+    border-color:  lightslategrey;
+    border-width: 2px;
+    border-radius: 20px;
+}
