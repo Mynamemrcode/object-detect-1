@@ -1,4 +1,5 @@
 Status = ""; 
+object=[];
 image = document.getElementById("id");     
 function me() {
     window.location = "me.html"
@@ -42,5 +43,17 @@ function got(result, error) {
 
 }
 function draw() {
+    if(Status != "") {
+        for(var i=0; i < object.length; i++){
+            document.getElementById("stat").innerHTML = "Status : Detected Object, Highlighting";
+            fill("blue");
+            percentenator = floor(object[i].confidence * 100);
+            console.log(object[i].confidence);
+            text(object[i].label+percentenator+"%"+ object[i].x, object[i].y);
+            noFill()
+            stroke("blue");
+            rect(object[i].x, object[i].y, object[i].width, object[i].height);
+        }
 
+    }
 }
